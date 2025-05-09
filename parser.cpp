@@ -145,7 +145,6 @@ Stm* Parser::parseStatement() {
         }
 
         if (match(Token::RANGE)) {
-            // For range
             if (!match(Token::PI)) {
                 cout << "Error: se esperaba '(' después de range" << endl;
                 exit(1);
